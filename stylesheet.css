@@ -1,0 +1,226 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+/*ここから新しく*/
+.contaier{
+  width:1170px;
+  /*以下２つはコピペなので、変更可能性あり（よくわかってない）*/
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header{
+  height:65px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:10;
+  background-color:rgba(153, 68, 68,0.9);
+}
+
+.header-left{
+  float:left;
+  padding:20px;
+  width:300px
+}
+
+.header-right{
+  float:left;
+  padding:20px 20px 20px 300px;
+}
+
+.header-right a{
+  float:left;
+  margin-right:80px;
+}
+
+.login{
+  line-height: 25px;
+  background-color: rgba(128, 128, 128,0.7);
+  transition:all 0.5s;
+  padding: 20px;
+  float:right;
+  margin-right:20px;
+}
+
+.login:hover{
+  background-color: rgba(128, 128, 128,1);
+}
+
+.login a{
+  line-height: 65px;
+  display:block;
+}
+
+.top-wrapper{
+  background-image: url(https://souken.movabletype.io/higher/.assets/2019_RCM214_22_TOP-b255443d6.png);
+  background-size: cover;
+  padding: 180px 0 100px 0;
+  height:580px;
+  text-align:center;
+  color:rgb(6, 6, 6);
+}
+
+.a1{
+background-color:rgba(219, 230, 226, 0.6);
+display:block;
+padding:30px 0 90px 0;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.instagram {
+  background-color: #c61783;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.contact-form {
+  padding-top: 100px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+input,textarea {
+      width: 400px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      padding: 20px;
+      font-size: 18px;
+      border: 1px solid #dee7ec;
+  }
+
+  .contact-submit{
+      background-color: #dee7ec;
+      color:#889eab;
+  }
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+}
