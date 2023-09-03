@@ -18,6 +18,10 @@ a {
   color:white;
 }
 
+ul {
+    list-style: none;
+  }
+
 /*ここから新しく*/
 .contaier{
   width:1170px;
@@ -51,6 +55,10 @@ header{
   margin-right:80px;
 }
 
+.header-right a:hover{
+  border-bottom:2px solid #ffffff;
+}
+
 .login{
   line-height: 25px;
   background-color: rgba(128, 128, 128,0.7);
@@ -58,16 +66,91 @@ header{
   padding: 20px;
   float:right;
   margin-right:20px;
+  cursor: pointer;
+  color:white;
+  display:block;
 }
 
 .login:hover{
   background-color: rgba(128, 128, 128,1);
 }
 
-.login a{
-  line-height: 65px;
-  display:block;
-}
+/*モーダル*/
+.signup-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #5dca88;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover{
+    background-color: rgba(93, 202, 136,0.7);
+  }
+
+  .login-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+  }
+  
+  #login-form {
+    width: 100%;
+  }
+  
+  #login-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  #login-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
 
 .top-wrapper{
   background-image: url(https://souken.movabletype.io/higher/.assets/2019_RCM214_22_TOP-b255443d6.png);
@@ -95,29 +178,57 @@ padding:30px 0 90px 0;
 }
 
 .btn-wrapper {
-  margin: 20px 0;
+  margin:100px 0 20px 0;
+  border:3px solid #98f867;
+  display:inline-block;
+  font-size: 15px;
+  width:500px;
+  height:130px;
+  border-radius:90px;
+  background-color: #eee;
 }
 
 .btn-wrapper p {
   margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
+  font-size: 30px;
+  padding-right: 20px;
 }
 
 .instagram {
-  background-color: #c61783;
   margin-right: 10px;
 }
+.instagram:hover{
+  color:#c6529a;
+}
+.instagram img{
+  width:30px;
+  padding-right: 5px;
+  vertical-align: middle;/*vertical-align: middle;は習っていない*/
+}
+.instagram span{
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
 
-.twitter {
-  background-color: #55acee;
+.twitter:hover{
+  color:#14a5ce;
+}
+
+.twitter img{
+  width:30px;
+  vertical-align: middle;
+  margin-right:10px;
+  border-radius: 5px;
+}
+.twitter span{
+  padding-bottom: 5px;
+  vertical-align: middle;
 }
 
 .btn {
   padding: 8px 24px;
-  color: white;
+  color: black;
+  font-weight: bolder;
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
@@ -131,7 +242,7 @@ padding:30px 0 90px 0;
   margin-right: 5px;
 }
 .lesson-wrapper {
-  height: 500px;
+  height: 350px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
@@ -152,6 +263,11 @@ padding:30px 0 90px 0;
   width: 25%;
 }
 
+.lesson img{
+  width:50%;
+  height:200px;
+}
+
 .lesson-icon {
   position: relative;
 }
@@ -169,14 +285,61 @@ padding:30px 0 90px 0;
   margin-top: 20px;
   font-size: 12px;
   color: #b3aeb5;
+  display:none;
 }
+
+.txt-active{
+    display:inline-block;
+}
+
+.faq-wrapper {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding-bottom: 80px;
+    color: #5f5d60;
+  }
+  
+  #faq-list {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .faq-list-item {
+    margin:30px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+    cursor:pointer;
+    text-align: left;
+  }
+  
+  .faq-list-item h3 {
+    font-size: 20px;
+  }
+  
+  .faq-list-item span {
+    position:absolute;
+    top:-10px;
+    right:5px;
+    color:black;
+    font-size:24px;
+  }
+  
+  .answer {
+    font-size: 18px;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  
 
 .heading h3 {
   font-weight: normal;
 }
 
 .message-wrapper {
-  padding-bottom: 80px;
+  padding: 50px 0 180px 0;
   text-align: center;
 }
 
@@ -192,10 +355,102 @@ padding:30px 0 90px 0;
   box-shadow: none;
 }
 
+
+  
+  .slide-wrapper {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    color: #5e6f84;
+    padding: 130px 0;
+    border-bottom:1px solid #eee;
+    display:block;
+  }
+  
+  .slide-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .change-btn-wrapper {
+    width: 500px;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+  
+  .change-btn-wrapper:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .prev-btn {
+    cursor: pointer;
+    float: left;
+    display: none;
+  }
+  
+  .next-btn {
+    cursor: pointer;
+    float: right;
+  }
+  
+  .slides {
+    padding: 0;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    border:5px solid #d5d0be;
+  }
+  
+  .index-btn-wrapper {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .index-btn {
+    display: inline-block;
+    color: #4e90af;
+    background-color: #e0f5ff;
+    width: 40px;
+    padding: 6px 0;
+    margin: 0 5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .index-btn:hover {
+    color: #fff;
+    background-color: #5cabd0;
+  }
+
+
+
 .contact-form {
-  padding-top: 100px;
-  border-bottom: 1px solid #eee;
+  padding-top: 70px;
+  border: 1px solid #eee;
   text-align: center;
+  background-color: #c3c3d6;
+}
+
+.section-title{
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    display:inline-block;
+    width:600px
 }
 
 input,textarea {
@@ -212,6 +467,10 @@ input,textarea {
       color:#889eab;
   }
 
+  .contact-submit:hover{
+    background-color: rgba(223, 232, 236,0.8);
+  }
+
 footer img {
   width: 125px;
 }
@@ -223,4 +482,6 @@ footer p {
 
 footer {
   padding-top: 30px;
+  background-color:rgb(153, 68, 68);
+  height:61px;
 }
