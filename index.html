@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!--蝋燭の火が消えて障子が開く-->
         <title>早稲田大学軟式庭球同好会　ホームページ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
-        <script src="https://github.com/renren2002/renren2002.github.io/blob/main/waseda.js"></script>
+        <link rel="stylesheet" href="responsive.css">     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <meta name="google-site-verification" content="O9AeepPY4Pm7XHOIbMW4w5OHJvg8y9VCO8VWHxPd_SA" />
     </head>
 
     <body>
         <header>
             <div class="container">
                 <div class="header-left">
-                    <a class="logo" href="http://127.0.0.1:3004/Users/yx/早稲田軟式庭球同好会ver.2">早稲田大学軟式庭球同好会 HP</a>
+                    <a class="logo" href="#">早稲田大学軟式庭球同好会HP</a>
                 </div>
                 <div class="header-right">
                     <a href="https://waseda-nannteidou-2023.jimdosite.com/%E6%B4%BB%E5%8B%95%E7%B4%B9%E4%BB%8B/" class="">活動紹介</a>
@@ -22,19 +22,37 @@
                     <a href="https://waseda-nannteidou-2023.jimdosite.com/%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC/" class="">ギャラリー</a>
                     <a href="https://waseda-nannteidou-2023.jimdosite.com/%E3%83%AA%E3%83%B3%E3%82%AF/" class="">リンク</a> 
                 </div>
-                <a href="#" class="login">ログイン</a>
+                <span class="login">ログイン</span>
             </div>
         </header>
 
+        <div class="login-modal-wrapper" id="login-modal">
+          <div class="modal">
+            <div class="close-modal">
+              <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div id="login-form">
+              <h2>ログイン</h2>
+              <form action="#">
+                <input class="form-control" type="text" placeholder="メールアドレス">
+                <input class="form-control" type="password" placeholder="パスワード">
+                <div class="submit-btn">ログイン</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        
+
         <div class="top-wrapper">
             <div class="container a1">
-              <h1>ようこそ！<br>早大軟式庭球同好会HP</h1>
+              <h1>涙を拭いておいでなせぇ<br>恨みを晴らす軟庭同<br>陰膳据えて待っておりやす</h1>
               <p>同好会は創立６０年以上の伝統あるサークルです。<br>構成員は皆、早大生！</p>
-              <div class="btn-wrapper">
-                <a href="#" class="btn signup signup-red">新規登録はこちら</a>
+              <div class="btn-wrapper">  
                 <p>SNS</p>
-                <a href="https://instagram.com/waseda.nannteidou/" class="btn instagram"><span class="fa fa-instagram"></span>Instagram</a>
-                <a href="https://twitter.com/w_softtennis" class="btn twitter"><span class="fa fa-twitter"></span>X(旧Twitter)</a>
+                <a href="https://instagram.com/waseda.nannteidou/" class="btn instagram"><img src="https://tamoc.com/wp-content/uploads/2023/07/Instagram_Glyph_Gradient_mod.png">
+              <span>Instagram</span></a>
+                <a href="https://twitter.com/w_softtennis" class="btn twitter"><img src="https://tamoc.com/wp-content/uploads/2023/08/logo_metaX-3.png"><span>X(旧Twitter)</span></a>
               </div>
             </div>
           </div>
@@ -44,46 +62,112 @@
                 <h2>インフォメーション</h2>
               </div>
               <div class="lessons">
-                <div class="lesson">
+
+                <a href="https://waseda-nannteidou-2023.jimdosite.com/%E6%B4%BB%E5%8B%95%E7%B4%B9%E4%BB%8B/">
+                 <div class="lesson">
                   <div class="lesson-icon">
-                    <img src="https://prog-8.com/images/html/advanced/html.png">
-                    <p>幹事紹介</p>
+                    <img src="https://1.bp.blogspot.com/-A3Ve0J3G3I4/WCqdyTkT2iI/AAAAAAAA_nU/c4UZYE8W4Ao33Ryuc7W5cejrQb80XnU0ACLcB/s400/kanji_man.png">
                   </div>
                   <p class="txt-contents">このサークルの幹事の紹介をします。</p>
-                </div>
+                 </div>
+                </a>
+
+                <a href="#">
                 <div class="lesson">
                   <div class="lesson-icon">
-                    <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-                    <p>実績</p>
+                    <img src="https://4.bp.blogspot.com/-GtjTLp56u_0/VJ6XZcw50aI/AAAAAAAAqKU/4oPlYcWPNoA/s450/figure_hakusyu.png">
                   </div>
                   <p class="txt-contents">これまでの活動実績を紹介します。</p>
                 </div>
+                </a>
+
+                <a href="https://waseda-nannteidou-2023.jimdosite.com/%E5%B9%B4%E9%96%93%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/">
                 <div class="lesson">
                   <div class="lesson-icon">
-                    <img src="https://prog-8.com/images/html/advanced/ruby.png">
-                    <p>行事</p>
+                    <img src="https://1.bp.blogspot.com/-RJRt_Hv37Kk/VMIu-CCBpII/AAAAAAAAq2E/JsIJ8pPwmuY/s400/calender_takujou.png">
                   </div>
                   <p class="txt-contents">一年の行事を紹介します。</p>
                 </div>
+                </a>
+
+                <a href="#">
                 <div class="lesson">
                   <div class="lesson-icon">
-                    <img src="https://prog-8.com/images/html/advanced/php.png">
-                    <p>その他</p>
+                    <img src="https://1.bp.blogspot.com/-61AaetRYALc/XQsQpwUB63I/AAAAAAABTVg/FY_ecihvW60JCY_hyKL4J35-R8FK3L20QCLcBGAs/s400/building_yorozuya.png">
                   </div>
                   <p class="txt-contents">その他の情報を記載します。</p>
                 </div>
+                </a>
               </div>
             </div>
           </div>
+
+          <div class="slide-wrapper">
+            <h2 class="slide-title">ざっくり！サークルの一年</h2>
+              <div class="change-btn-wrapper">
+                <div class="change-btn prev-btn">← 前へ</div>
+                <div class="change-btn next-btn">次へ →</div>
+              </div>
+              <ul class="slides">
+                <li class="slide active"><img src="https://1.bp.blogspot.com/-rV_SrbPMEVM/W8mrGRh2uzI/AAAAAAABPjU/2wtou_0myos1DX8ayVzYIp5GOuUwz0FYwCLcBGAs/s400/computer_kurayami_man.png"></li>
+                <li class="slide"><img src="https://4.bp.blogspot.com/-58dmfhgqVOw/VZt5cqwjtkI/AAAAAAAAu6Q/AcQbuMws_1c/s550/netgame_chudoku_haijin.png"></li>
+                <li class="slide"><img src="https://2.bp.blogspot.com/-5bNXcjt_dhs/VsGsA7eqYcI/AAAAAAAA36A/V1TfyPavppE/s400/eakon_reibou.png"></li>
+                <li class="slide"><img src="https://1.bp.blogspot.com/-BU0_jycnBQ0/XnmrUtT37QI/AAAAAAABX4s/qJMAv4ATb4ksbvXT_pK6FWVtN6YIiAnSQCNcBGAsYHQ/s400/jitaku_taiki__relax_man.png"></li>
+                <li class="slide"><img src="https://1.bp.blogspot.com/-h2pnCtZekcQ/VjQE3yQ4WbI/AAAAAAAA0QY/vjJaTQotPbQ/s400/eto_saru_kotatsu.png"></li>
+              </ul>
+              <div class="index-btn-wrapper">
+                <div class="index-btn">1</div>
+                <div class="index-btn">2</div>
+                <div class="index-btn">3</div>
+                <div class="index-btn">4</div>
+                <div class="index-btn">5</div>
+              </div>
+            </div>
+
           <div class="message-wrapper">
             <div class="container">
               <div class="heading">
                 <h2>ナンテイドウの世界へようこそ</h2>
                 <h3>Welcome to the Nanteido</h3>
               </div>
-              <a href="#" class="btn message">ナンテイドウの世界に進む</a>
+              <span class="btn message signup-show">ナンテイドウの世界に進む</span>
             </div>
-            <div class="contact-form"></div>
+          </div>
+          
+          <div class="faq-wrapper">
+            <div class="container">
+              <div class="heading">
+                <h2>FAQ</h2>
+              </div>
+              <div class="faq">
+                <ul id="faq-list">
+                  <li class="faq-list-item">
+                    <h3 class="question">活動時間・場所</h3>
+                    <span>+</span>
+                    <div class="answer">
+                      <p>月曜日～金曜日 12:30～16:30 航空公園テニスコート（所沢駅）
+                        <br>土曜日 9:00～13:00 城北中央公園テニスコート（上板橋駅、氷川台駅）</p>
+                    </div>
+                  </li>
+                  <li class="faq-list-item">
+                    <h3 class="question">幹事紹介</h3>
+                    <span>+</span>
+                    <div class="answer">
+                      <p><名前－役職－出身校－学部>
+                        <br>大川祐太郎－幹事長兼OBOG係－福井県立藤島高等学校－政治経済学部
+                        <br>大川祐太郎－女子幹事長兼会計係兼渉外係兼庶務係－静岡県立静岡高等学校－医学部</p>
+                    </div>
+                  </li>
+                  <li class="faq-list-item">
+                    <h3 class="question">幹事長は何歳ですか？</h3>
+                    <span>+</span>
+                    <div class="answer">
+                      <p>幹事長は10万19歳です。(2023/9/30時点)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="contact-form">
@@ -96,14 +180,76 @@
 
             <p>※必須項目は必ずご入力ください</p>
             <input class="contact-submit" type="submit" value="送信">
-        </div>
+           </div>
 
           <footer>
             <div class="container">
-              <img src="">
               <p>ソフトテニスで思い出を作ろう</p>
             </div>
           </footer>
-          <script src="https://github.com/renren2002/renren2002.github.io/blob/main/waseda.js"></script>
+          <script>$(function() {
+            $('.login').click(function() {
+                $('#login-modal').fadeIn();
+            });
+        
+           
+            $('.close-modal').click(function() {
+              $('#login-modal').fadeOut();
+            });
+        
+            $('.lesson').hover(
+                function() {
+                  $(this).find('.txt-contents').addClass('txt-active');
+                },
+                function(){
+                  $(this).find('.txt-contents').removeClass('txt-active');
+                }
+               );
+        
+               $('.faq-list-item').click(function() {
+                var $answer = $(this).find('.answer');
+                if($answer.hasClass('open')) {
+                  $answer.removeClass('open');
+                  $answer.slideUp();
+                   $(this).find('span').text('+');
+                } else {
+                  $answer.addClass('open');
+                   $answer.slideDown();
+                   $(this).find('span').text('-');
+                }  
+              });
+        
+              $('.contact-submit').submit(function(){
+        
+              });
+        
+              function toggleChangeBtn() {
+                var slideIndex = $('.slide').index($('.active'));
+                $('.change-btn').show();
+                if (slideIndex == 0) {
+                  $('.prev-btn').hide();
+                } else if (slideIndex == $('.slide').length - 1) {
+                  $('.next-btn').hide();
+                }
+              }
+              
+              $('.index-btn').click(function() {
+                $('.active').removeClass('active');
+                var clickedIndex = $('.index-btn').index($(this));
+                $('.slide').eq(clickedIndex).addClass('active');
+                toggleChangeBtn();
+              });
+              
+              $('.change-btn').click(function() {
+                var $displaySlide = $('.active');
+                $displaySlide.removeClass('active');
+                if ($(this).hasClass('next-btn')) {
+                  $displaySlide.next().addClass('active');
+                } else {
+                  $displaySlide.prev().addClass('active');
+                }
+                toggleChangeBtn();
+              });
+          });</script>
     </body>
 </html>
