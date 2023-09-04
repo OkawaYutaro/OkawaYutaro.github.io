@@ -14,7 +14,7 @@
         <header>
             <div class="container">
                 <div class="header-left">
-                    <a class="logo" href="#">早稲田大学軟式庭球同好会HP</a>
+                    <a class="logo" href="#">2024年度 早稲田大学軟式庭球同好会 ホームページ</a>
                 </div>
                 <div class="header-right">
                     <a href="https://waseda-nannteidou-2023.jimdosite.com/%E6%B4%BB%E5%8B%95%E7%B4%B9%E4%BB%8B/" class="">活動紹介</a>
@@ -56,6 +56,7 @@
               </div>
             </div>
           </div>
+
           <div class="lesson-wrapper">
             <div class="container">
               <div class="heading">
@@ -124,16 +125,18 @@
               </div>
             </div>
 
+            
           <div class="message-wrapper">
             <div class="container">
               <div class="heading">
-                <h2>ナンテイドウの世界へようこそ</h2>
-                <h3>Welcome to the Nanteido</h3>
+                <h2>質問や問い合わせがありましたらご相談ください</h2>
+                <h3>If you have any questions or inquiries, please contact us.</h3>
               </div>
-              <span class="btn message signup-show">ナンテイドウの世界に進む</span>
+              <a href="#submit1"><span class="btn message signup-show">問い合わせる</span></a>
             </div>
           </div>
           
+
           <div class="faq-wrapper">
             <div class="container">
               <div class="heading">
@@ -170,7 +173,7 @@
             </div>
           </div>
 
-          <div class="contact-form">
+          <div class="contact-form" id="submit1">
             <h3 class="section-title">お問い合わせ</h3>
             <p>メールアドレス（必須）</p>
             <input>
@@ -182,12 +185,18 @@
             <input class="contact-submit" type="submit" value="送信">
            </div>
 
+
           <footer>
             <div class="container">
+                <h1>早稲田大学軟式庭球同好会</h1>
               <p>ソフトテニスで思い出を作ろう</p>
             </div>
           </footer>
-          <script>$(function() {
+
+
+
+          <script>
+          $(function() {
             $('.login').click(function() {
                 $('#login-modal').fadeIn();
             });
@@ -250,6 +259,7 @@
                 }
                 toggleChangeBtn();
               });
-          });</script>
+          });
+          </script>
     </body>
 </html>
