@@ -42,12 +42,12 @@ header{
 .header-left{
   float:left;
   padding:20px;
-  width:300px
+  width:400px
 }
 
 .header-right{
   float:left;
-  padding:20px 20px 20px 300px;
+  padding:20px 20px 20px 200px;
 }
 
 .header-right a{
@@ -59,20 +59,25 @@ header{
   border-bottom:2px solid #ffffff;
 }
 
+.header-right a:active{
+  opacity: 0.7;
+}
+
 .login{
   line-height: 25px;
   background-color: rgba(128, 128, 128,0.7);
-  transition:all 0.5s;
+  transition:all 0.3s;
   padding: 20px;
   float:right;
   margin-right:20px;
   cursor: pointer;
-  color:white;
+  color:rgba(255, 255, 255,0.6);
   display:block;
 }
 
 .login:hover{
   background-color: rgba(128, 128, 128,1);
+  color:rgba(255, 255, 255,1);
 }
 
 /*モーダル*/
@@ -341,12 +346,14 @@ padding:30px 0 90px 0;
 .message-wrapper {
   padding: 50px 0 180px 0;
   text-align: center;
+  border-top:1px solid #eee;
 }
 
 .message {
   padding: 15px 40px;
-  background-color: #5dca88;
-  box-shadow: 0 7px #1a7940;
+  background-color: #ca5d5d;
+  box-shadow: 0 7px #a14b4b;
+  color:white;
 }
 
 .message:active {
@@ -362,8 +369,7 @@ padding:30px 0 90px 0;
     width: 1000px;
     margin: 0 auto;
     color: #5e6f84;
-    padding: 130px 0;
-    border-bottom:1px solid #eee;
+    padding:60px 0 130px 0;
     display:block;
   }
   
@@ -439,9 +445,10 @@ padding:30px 0 90px 0;
 
 .contact-form {
   padding-top: 70px;
-  border: 1px solid #eee;
+  border-top: 2px solid rgb(222, 231, 236);
+  border-bottom: 2px solid #c82828;
   text-align: center;
-  background-color: #c3c3d6;
+  background-color: #d4dbdf;
 }
 
 .section-title{
@@ -450,7 +457,7 @@ padding:30px 0 90px 0;
     padding-bottom: 15px;
     margin-bottom: 50px;
     display:inline-block;
-    width:600px
+    width:600px;
 }
 
 input,textarea {
@@ -465,14 +472,23 @@ input,textarea {
   .contact-submit{
       background-color: #dee7ec;
       color:#889eab;
+      width:450px;
   }
 
   .contact-submit:hover{
-    background-color: rgba(223, 232, 236,0.8);
+    background-color: #5dca88;
+    color:#070707;
   }
 
-footer img {
-  width: 125px;
+  .contact-submit:active{
+    opacity: 0.8;
+  }
+
+footer h1 {
+  width: 300px;
+  font-size: 20px;
+  padding-top:5px;
+  color:#eee;
 }
 
 footer p {
@@ -481,7 +497,6 @@ footer p {
 }
 
 footer {
-  padding-top: 30px;
   background-color:rgb(153, 68, 68);
-  height:61px;
+  height:80px;
 }
